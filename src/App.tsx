@@ -1,55 +1,38 @@
-import React from 'react';
-import './App.css';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {Box, Container} from "@material-ui/core";
-import {AcronymList} from "./AcronymList";
-import {drabc, sample, socrates} from "./Data";
+import React from 'react'
+import './App.css'
+import { Box, Button, Container } from '@material-ui/core'
+import { Definitions } from './Definitions'
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom'
+import { RandomTest } from './RandomTest'
 
-
-function App(): JSX.Element {
-
-    return (
+function App (): JSX.Element {
+  return (
+      <Router>
         <div className="App">
             <Container maxWidth="lg">
-                <Box m={2}>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon/>}
-                            aria-controls="panel1a-content">
-                            <Typography>DRsABCs</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <AcronymList data={drabc}/>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon/>}
-                            aria-controls="panel2a-content">
-                            <Typography>SAMPLE</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <AcronymList data={sample}/>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon/>}
-                            aria-controls="panel2a-content">
-                            <Typography>SOCRATES</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <AcronymList data={socrates}/>
-                        </AccordionDetails>
-                    </Accordion>
+                <Box marginTop={4}>
+                    <Switch>
+                        <Route path="/test">
+                            <RandomTest/>
+                        </Route>
+                        <Route path="/">
+                            <Definitions/>
+                            <Box mt={2}>
+                            <Link to={'/test'}><Button variant="contained" >Test yourself</Button></Link>
+                            </Box>
+                        </Route>
+                    </Switch>
                 </Box>
             </Container>
+
         </div>
-    );
+      </Router>
+  )
 }
 
-export default App;
+export default App
