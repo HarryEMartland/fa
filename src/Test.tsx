@@ -9,8 +9,7 @@ import {
 
 const theme = createTheme({
   palette: {
-    primary: green,
-    secondary: green
+    primary: green
   }
 })
 
