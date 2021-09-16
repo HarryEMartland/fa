@@ -1,4 +1,4 @@
-import { Avatar, List, ListItem, ListItemAvatar, ListItemText } from '@material-ui/core'
+import { Avatar, List, ListItem, ListItemAvatar, ListItemText } from '@mui/material'
 import React from 'react'
 import { AcronymEntry } from './AcronymEntry'
 

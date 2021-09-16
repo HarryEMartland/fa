@@ -1,17 +1,14 @@
-import Accordion from '@material-ui/core/Accordion'
-import AccordionSummary from '@material-ui/core/AccordionSummary'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import Typography from '@material-ui/core/Typography'
-import AccordionDetails from '@material-ui/core/AccordionDetails'
+
 import { AcronymList } from './AcronymList'
 import { drabc, sample, socrates } from './Data'
 import React from 'react'
-
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material'
+import { ExpandMore } from '@mui/icons-material'
 export function Definitions () {
   return <>
         <Accordion>
             <AccordionSummary
-                expandIcon={<ExpandMoreIcon/>}
+                expandIcon={<ExpandMore/>}
                 aria-controls="panel1a-content">
                 <Typography>DRsABCs</Typography>
             </AccordionSummary>
@@ -21,7 +18,7 @@ export function Definitions () {
         </Accordion>
         <Accordion>
             <AccordionSummary
-                expandIcon={<ExpandMoreIcon/>}
+                expandIcon={<ExpandMore/>}
                 aria-controls="panel2a-content">
                 <Typography>SAMPLE</Typography>
             </AccordionSummary>
@@ -31,7 +28,7 @@ export function Definitions () {
         </Accordion>
         <Accordion>
             <AccordionSummary
-                expandIcon={<ExpandMoreIcon/>}
+                expandIcon={<ExpandMore/>}
                 aria-controls="panel2a-content">
                 <Typography>SOCRATES</Typography>
             </AccordionSummary>

@@ -1,8 +1,8 @@
 import { AcronymEntry } from './AcronymEntry'
 import React, { useState } from 'react'
-import { Box, Button, LinearProgress, TextField, ThemeProvider } from '@material-ui/core'
-import { createTheme } from '@material-ui/core/styles'
-import { green } from '@material-ui/core/colors'
+import { Box, Button, LinearProgress, TextField, ThemeProvider } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
+import { green } from '@mui/material/colors'
 import {
   Link
 } from 'react-router-dom'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Checkbox, FormControlLabel, FormGroup, Typography } from '@material-ui/core'
+import { Box, Button, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
 
 export class Checklist extends React.Component<{ checklist: { name: string; list: ({ name: string } | { name: string })[] } }> {
