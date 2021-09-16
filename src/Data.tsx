@@ -56,3 +56,24 @@ export const sample = [
     description: 'What happened and where? Is the incident due to an illness or an accident? Ask any people nearby what happened and look for any clues that may give you more information.'
   }
 ]
+
+export const preCheckList = {
+  name: 'Pre Game Checklist',
+  list: [
+    { name: 'Unlock cupboards' },
+    { name: 'Room checklist' },
+    { name: 'Grab bag Checklist' },
+    { name: 'Show new people around' }
+  ]
+}
+
+export const postCheckList = {
+  name: 'Post Game Checklist',
+  list: [
+    { name: 'Return drinks containers if running low' },
+    { name: 'Check area is clear of supporters' },
+    { name: 'Lock cupboards' },
+    { name: 'Turn off lights' },
+    { name: 'Return room box' }
+  ]
+}
