@@ -77,6 +77,15 @@ export const sample: Acronym = {
   ]
 }
 
+export const lite: Acronym = {
+  name: 'LITE',
+  letters: [
+    { name: 'Load', description: 'This means considering the object or person that is being moved and looking at how this may affect health and safety. For example, is the load particularly heavy, bulky, hard to grasp or unstable?' },
+    { name: 'Individual', description: 'This means you should consider the person who will be carrying out the manual handling activity. Will it be you or another colleague? For example, how strong, fit or able is the person? Are they capable of manual handling alone or do they need assistance?' },
+    { name: 'Task', description: 'This means that you should consider the manual handling activity itself. What does the task involve and how it may affect your health and safety? For example, does the task involve repetitive movements or uneven weight distribution?' },
+    { name: 'Environment', description: 'This means considering the area in which the load is being moved and looking at how this could potentially make the manual handling activity unsafe. For example, is the floor slippery or uneven, and is there sufficient lighting?' }]
+}
+
 export const preCheckList = {
   name: 'Pre Game Checklist',
   list: [
@@ -132,4 +141,4 @@ export const grabBagChecklist = {
   ]
 }
 
-export const allAcronyms: Acronym[] = [drabc, sample, socrates]
+export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite]

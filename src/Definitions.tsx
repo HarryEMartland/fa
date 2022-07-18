@@ -16,6 +16,5 @@ export function Definitions () {
               <AcronymList data={acronym.letters}/>
           </AccordionDetails>
       </Accordion>)}
-
     </>
 }
