@@ -1,3 +1,4 @@
+
 export const socrates = [
   { name: 'Site', description: 'Where is the pain? Or the maximal site of the pain.' },
   {
@@ -75,5 +76,39 @@ export const postCheckList = {
     { name: 'Lock cupboards' },
     { name: 'Turn off lights' },
     { name: 'Return room box' }
+  ]
+}
+
+export const grabBagChecklist = {
+  name: 'Grab Bag Checklist',
+  list: [
+    { name: 'PRF', quantity: 5, images: ['images/test.png', 'images/test.png'] },
+    { name: 'Clinical waste bag', quantity: 1 },
+    { name: 'Gloves small', quantity: 1 },
+    { name: 'Gloves medium', quantity: 1 },
+    { name: 'Gloves large', quantity: 1 },
+    { name: 'Triangular Bandages', quantity: 1 },
+    { name: 'Eye Pad', quantity: 1 },
+    { name: 'Dressings No. 2', quantity: 1 },
+    { name: 'Dressings No. 3', quantity: 1 },
+    { name: 'Dressing No. 1', quantity: 1 },
+    { name: 'Conforming Bandages 10cm', quantity: 1 },
+    { name: 'Conforming Bandages 7cm', quantity: 1 },
+    { name: 'Conforming Bandages 5cm', quantity: 1 },
+    { name: 'Normasol', quantity: 1 },
+    { name: 'None Adherent Dressing 5cm', quantity: 1 },
+    { name: 'None Adherent Dressing 7cm', quantity: 1 },
+    { name: 'None Adherent Dressing 10cm', quantity: 1 },
+    { name: 'Micropore', quantity: 1 },
+    { name: 'Bag Gauze', quantity: 1 },
+    { name: 'Tough cuts', quantity: 1 },
+    { name: 'Safety Pins', quantity: 1 },
+    { name: 'Eye Wash', quantity: 1 },
+    { name: 'Vomit Bags', quantity: 1 },
+    { name: 'Vent Aid', quantity: 1 },
+    { name: 'Pen Torch', quantity: 1 },
+    { name: 'Ice Packs', quantity: 1 },
+    { name: 'Plasters Blue', quantity: 1 },
+    { name: 'Plasters Normal', quantity: 1 }
   ]
 }
