@@ -86,6 +86,38 @@ export const lite: Acronym = {
     { name: 'Environment', description: 'This means considering the area in which the load is being moved and looking at how this could potentially make the manual handling activity unsafe. For example, is the floor slippery or uneven, and is there sufficient lighting?' }]
 }
 
+export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite]
+
+export interface Obs {
+  name: string
+  shortName: string
+  low: number
+  high: number
+}
+
+export const pulse: Obs = {
+  name: 'Pulse',
+  shortName: 'PR',
+  low: 50,
+  high: 90
+}
+
+export const temp: Obs = {
+  name: 'Temperature',
+  shortName: 'T',
+  low: 36,
+  high: 38
+}
+
+export const resps: Obs = {
+  name: 'Respiration Rate',
+  shortName: 'RR',
+  low: 12,
+  high: 20
+}
+
+export const allObs : Obs[] = [pulse, temp, resps]
+
 export const preCheckList = {
   name: 'Pre Game Checklist',
   list: [
@@ -140,5 +172,3 @@ export const grabBagChecklist = {
     { name: 'Plasters Normal', quantity: 1 }
   ]
 }
-
-export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite]
