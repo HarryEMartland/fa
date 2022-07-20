@@ -6,6 +6,7 @@ import { RandomTest } from './RandomTest'
 import { grabBagChecklist, postCheckList, preCheckList } from './Data'
 import { Checklist } from './Checklist'
 import { Box, Button, Container } from '@mui/material'
+import { ObsTest } from './ObsTest'
 
 function App (): JSX.Element {
   return (
@@ -16,6 +17,9 @@ function App (): JSX.Element {
                         <Switch>
                             <Route path="/test">
                                 <RandomTest/>
+                            </Route>
+                            <Route path="/obs/test">
+                                <ObsTest/>
                             </Route>
                             <Route path="/checklist/pre">
                                 <Checklist checklist={preCheckList}/>
@@ -29,7 +33,10 @@ function App (): JSX.Element {
                             <Route path="/">
                                 <Definitions/>
                                 <Box mt={2}>
-                                    <Link to={'/test'}><Button variant="contained">Test yourself</Button></Link>
+                                    <Link to={'/test'}><Button variant="contained">Test your Acronym Knowledge</Button></Link>
+                                </Box>
+                                <Box mt={2}>
+                                    <Link to={'/obs/test'}><Button variant="contained">Test your Obs Knowledge</Button></Link>
                                 </Box>
                                 <Box mt={2}>
                                     <Link to="/checklist/pre"><Button variant="contained">Pre Game
