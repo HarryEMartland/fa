@@ -95,6 +95,34 @@ export interface Obs {
   high: number
 }
 
+export const resps: Obs = {
+  name: 'Respiration Rate',
+  shortName: 'RR',
+  low: 12,
+  high: 20
+}
+
+export const o2: Obs = {
+  name: 'Respiration Rate',
+  shortName: 'O2',
+  low: 96,
+  high: 100
+}
+
+export const sBp: Obs = {
+  name: 'Systolic blood pressure',
+  shortName: 'BP',
+  low: 110,
+  high: 220
+}
+
+export const nBp: Obs = {
+  name: 'Normal blood pressure',
+  shortName: 'BP',
+  low: 80,
+  high: 120
+}
+
 export const pulse: Obs = {
   name: 'Pulse',
   shortName: 'PR',
@@ -109,14 +137,14 @@ export const temp: Obs = {
   high: 38
 }
 
-export const resps: Obs = {
-  name: 'Respiration Rate',
-  shortName: 'RR',
-  low: 12,
-  high: 20
+export const bm: Obs = {
+  name: 'Blood Glucose',
+  shortName: 'BM',
+  low: 36,
+  high: 38
 }
 
-export const allObs : Obs[] = [pulse, temp, resps]
+export const allObs : Obs[] = [resps, o2, sBp, nBp, pulse, temp]
 
 export const preCheckList = {
   name: 'Pre Game Checklist',
