@@ -137,6 +137,7 @@ export const temp: Obs = {
   high: 38
 }
 
+// todo
 export const bm: Obs = {
   name: 'Blood Glucose',
   shortName: 'BM',
