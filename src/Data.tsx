@@ -86,7 +86,27 @@ export const lite: Acronym = {
     { name: 'Environment', description: 'This means considering the area in which the load is being moved and looking at how this could potentially make the manual handling activity unsafe. For example, is the floor slippery or uneven, and is there sufficient lighting?' }]
 }
 
-export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite]
+export const avpu: Acronym = {
+  name: 'AVPU',
+  letters: [
+    { name: 'Alert', description: 'Patient is fully awake (though not necessarily orientated), will have spontaneously open eyes, and will respond to voice (thought may be confused). They will have bodily motor function.' },
+    { name: 'Voice', description: 'The patient makes some sort of response when you talk to them. This could be through the eyes, which open when you speak to them, or by voice which may only be as little as a grunt. Or, it could be by moving a limb when prompted to do so by the rescuer.' },
+    { name: 'Pressure', description: 'A patient may respond by using any of the three components when pain stimulus is used on them (Eyes, Voice, Movement). Recognised methods for causing pain are pinching the ear or pressing into the bed of a fingernail. A fully conscious patient will locate the pain and push it away, whereas a patient who is not alert and not responded to voice may only manifest involuntary flexion or extension of a limb. Performing pain stimulus should be used with caution as in extreme circumstances this could be considered assault.' },
+    { name: 'Unresponsive', description: 'This outcome is noted if the patient does not give any Eye, Voice or Motor response to voice or pain.' }
+  ]
+}
+
+export const rice: Acronym = {
+  name: 'RICE',
+  letters: [
+    { name: 'Rest', description: 'Adding additional stress on the sprain, such as standing or walking, can lead to pain, further swelling, and, even, additional injury. It’s a good policy to let the injured joint rest, then have a medical professional complete a thorough exam.' },
+    { name: 'Ice', description: 'Applying a cold pack helps control, or may even reduce, the swelling. Holding ice on the injury may help lessen the pain and inflammatory response caused by increased blood flow.' },
+    { name: 'Comfort', description: 'When there is an increase in inflammation there is often an increase in fluid accumulation in the affected areas. This increase in fluids causes increased pain, reduced mobility, and lessened blood flow. Elastic compression helps control the amount of fluid that accumulates and reduces pain and swelling.' },
+    { name: 'Elevate', description: 'Elevating the injured area helps promote blood flow return to the body. For example, a sprained ankle can be elevated to promote better blood flow to control the swelling and reduce the pain.' }
+  ]
+}
+
+export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite, avpu, rice]
 
 export interface Obs {
   name: string
@@ -103,7 +123,7 @@ export const resps: Obs = {
 }
 
 export const o2: Obs = {
-  name: 'Respiration Rate',
+  name: 'SpO2 ',
   shortName: 'O2',
   low: 96,
   high: 100

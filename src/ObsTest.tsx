@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Box, Grid, TextField, ThemeProvider } from '@mui/material'
+import { Box, Button, Grid, TextField, ThemeProvider } from '@mui/material'
 import { allObs, Obs } from './Data'
 import { createTheme } from '@mui/material/styles'
 import { green } from '@mui/material/colors'
+import { Link } from 'react-router-dom'
 
 const theme = createTheme({
   palette: {
@@ -44,5 +45,8 @@ export function ObsTest () {
                 {allObs.map(ob => <ObTest key={ob.name} ob={ob} onChange={(low, high) => {}}/>)}
             </Grid>
         </ThemeProvider>
+      <Box mt={2}>
+          <Link to={'/'}><Button variant="contained" >Back</Button></Link>
+      </Box>
     </Box>
 }
