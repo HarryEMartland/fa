@@ -14,7 +14,7 @@ const theme = createTheme({
 })
 
 function correct (name: string, values: Map<string, string>): boolean {
-  return name.toLowerCase() === (values.get(name) || '').toLowerCase()
+  return name.toLowerCase() === (values.get(name) || '').trim().toLowerCase()
 }
 
 export function Test (props: { data: AcronymEntry[] }): JSX.Element {

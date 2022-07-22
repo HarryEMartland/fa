@@ -11,7 +11,12 @@ import {
   ListItemText,
   Typography
 } from '@mui/material'
+import QuizIcon from '@mui/icons-material/Quiz'
 import { ExpandMore } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
+
+const noUnderLine = { textDecoration: 'none' }
+
 export function Definitions () {
   return <>
       {allAcronyms.map(acronym => <Accordion key={acronym.name}>
@@ -19,6 +24,7 @@ export function Definitions () {
               expandIcon={<ExpandMore/>}
               aria-controls="panel1a-content">
               <Typography>{acronym.name}</Typography>
+            <Link style={noUnderLine} to={`/acronym/test/${acronym.name}`}>&nbsp;<QuizIcon/></Link>
           </AccordionSummary>
           <AccordionDetails>
               <AcronymList data={acronym.letters}/>
@@ -29,6 +35,7 @@ export function Definitions () {
           expandIcon={<ExpandMore/>}
           aria-controls="panel1a-content">
         <Typography>Observations</Typography>
+        <Link style={noUnderLine} to={'/obs/test'}>&nbsp;<QuizIcon/></Link>
       </AccordionSummary>
         <AccordionDetails>
           {allObs.map(ob =>

@@ -7,6 +7,7 @@ import { grabBagChecklist, postCheckList, preCheckList } from './Data'
 import { Checklist } from './Checklist'
 import { Box, Button, Container } from '@mui/material'
 import { ObsTest } from './ObsTest'
+import { SingleAcronymTest } from './SingleAcronymTest'
 
 function App (): JSX.Element {
   return (
@@ -15,25 +16,28 @@ function App (): JSX.Element {
                 <Container maxWidth="lg">
                     <Box marginTop={4}>
                         <Switch>
-                            <Route path="/test">
+                            <Route path={'/acronym/test/:acronymName'}>
+                                <SingleAcronymTest />
+                            </Route>
+                            <Route path={'/acronym/test'}>
                                 <RandomTest/>
                             </Route>
-                            <Route path="/obs/test">
+                            <Route path={'/obs/test'}>
                                 <ObsTest/>
                             </Route>
-                            <Route path="/checklist/pre">
+                            <Route path={'/checklist/pre'}>
                                 <Checklist checklist={preCheckList}/>
                             </Route>
-                            <Route path="/checklist/post">
+                            <Route path={'/checklist/post'}>
                                 <Checklist checklist={postCheckList}/>
                             </Route>
-                            <Route path="/checklist/bag">
+                            <Route path={'/checklist/bag'}>
                                 <Checklist checklist={grabBagChecklist}/>
                             </Route>
-                            <Route path="/">
+                            <Route path={''}>
                                 <Definitions/>
                                 <Box mt={2}>
-                                    <Link to={'/test'}><Button variant="contained">Test your Acronym Knowledge</Button></Link>
+                                    <Link to={'/acronym/test'}><Button variant="contained">Test your Acronym Knowledge</Button></Link>
                                 </Box>
                                 <Box mt={2}>
                                     <Link to={'/obs/test'}><Button variant="contained">Test your Obs Knowledge</Button></Link>
