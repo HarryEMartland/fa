@@ -21,6 +21,8 @@ export function ObTest (props: { ob: Obs, onChange:(low:boolean, high:boolean)=>
                  label={props.ob.name + ' low'}
                  error={parseFloat(low) !== ob.low}
                  value={low}
+                 type="number"
+                 autoComplete="off"
                  onChange={(e) => {
                    setLow(e.target.value)
                    onChange(parseFloat(low) === ob.low, parseFloat(high) === ob.high)
@@ -31,6 +33,8 @@ export function ObTest (props: { ob: Obs, onChange:(low:boolean, high:boolean)=>
                    label={props.ob.name + ' high'}
                    error={parseFloat(high) !== ob.high}
                    value={high}
+                   type="number"
+                   autoComplete="off"
                    onChange={(e) => {
                      setHigh(e.target.value)
                      onChange(parseFloat(low) === ob.low, parseFloat(high) === ob.high)

@@ -28,6 +28,7 @@ export function Test (props: { data: AcronymEntry[] }): JSX.Element {
                            label={name[0]}
                            error={!correct(name, values)}
                            value={values.get(name)}
+                           autoComplete="off"
                            onChange={(e) => setValues(new Map(values).set(name, e.target.value))}/>
             </Box>)}
             <Box mt={2}>
