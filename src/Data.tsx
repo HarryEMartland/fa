@@ -106,7 +106,19 @@ export const rice: Acronym = {
   ]
 }
 
-export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite, avpu, rice]
+export const ashice: Acronym = {
+  name: 'ASHICE',
+  letters: [
+    { name: 'Age', description: 'Patient\'s age' },
+    { name: 'Sex', description: 'Whether the patient is male or female' },
+    { name: 'History', description: 'The immediate cause of injury or description of illness and any relevant preceding factors such as medical history and medicines taken or not taken' },
+    { name: 'Injuries/Illness', description: 'What injuries have been sustained, or what illness symptoms are presenting' },
+    { name: 'Condition', description: 'Observations of the patient (pulse, BP etc.), interventions used (cannulation, intubation etc.)' },
+    { name: 'Events', description: 'Events leading up to (everything else)' }
+  ]
+}
+
+export const allAcronyms: Acronym[] = [drabc, sample, socrates, lite, avpu, rice, ashice]
 
 export interface Obs {
   name: string
