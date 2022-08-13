@@ -135,17 +135,31 @@ export const resps: Obs = {
 }
 
 export const o2: Obs = {
-  name: 'SpO2 ',
+  name: 'SpO2',
   shortName: 'O2',
-  low: 96,
-  high: 100
+  low: 94,
+  high: 98
+}
+
+export const o2COPD: Obs = {
+  name: 'SpO2 COPD',
+  shortName: 'O2C',
+  low: 88,
+  high: 92
 }
 
 export const sBp: Obs = {
   name: 'Systolic blood pressure',
-  shortName: 'BP',
-  low: 110,
-  high: 220
+  shortName: 'sBP',
+  low: 100,
+  high: 150
+}
+
+export const dBp: Obs = {
+  name: 'Diastolic blood pressure',
+  shortName: 'dBP',
+  low: 50,
+  high: 100
 }
 
 export const nBp: Obs = {
@@ -158,8 +172,8 @@ export const nBp: Obs = {
 export const pulse: Obs = {
   name: 'Pulse',
   shortName: 'PR',
-  low: 50,
-  high: 90
+  low: 60,
+  high: 80
 }
 
 export const temp: Obs = {
@@ -169,15 +183,16 @@ export const temp: Obs = {
   high: 38
 }
 
-// todo
 export const bm: Obs = {
   name: 'Blood Glucose',
   shortName: 'BM',
-  low: 36,
-  high: 38
+  low: 4,
+  high: 8
 }
 
-export const allObs : Obs[] = [resps, o2, sBp, nBp, pulse, temp]
+// todo respiratory arrest < 10
+
+export const allObs : Obs[] = [resps, o2, sBp, nBp, pulse, temp, bm]
 
 export const preCheckList = {
   name: 'Pre Game Checklist',
