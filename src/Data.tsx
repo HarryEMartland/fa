@@ -192,7 +192,7 @@ export const bm: Obs = {
 
 // todo respiratory arrest < 10
 
-export const allObs : Obs[] = [resps, o2, sBp, nBp, pulse, temp, bm]
+export const allObs : Obs[] = [resps, o2, o2COPD, sBp, nBp, pulse, temp, bm]
 
 export const preCheckList = {
   name: 'Pre Game Checklist',
